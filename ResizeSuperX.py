@@ -147,7 +147,7 @@ class ResizeSuperX(BaseResizeSuperX):
 
         raise NotImplementedError(f'scale {scale} is not supported as of now')
 
-    def superX_generate_image_pad(self, image_file: str|None, pil_image: Image, model: nn.Module, scale: int=2, apply_tiles: bool=False, tile_max: int=256, sharpening_threshold:float=None) -> Image:
+    def superX_generate_image_pad(self, image_file: str|None, pil_image: Image, model: nn.Module, scale: int=2, apply_tiles: bool=True, tile_max: int=256, sharpening_threshold:float=None) -> Image:
         '''
         Will break image into tiles and then for each tile, will enhance them using the super-resolution model.
         Will return an image all stitched together.
