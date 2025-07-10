@@ -1,0 +1,1 @@
+download models pth files from Hugging Face at https://huggingface.co/patardi/pt-super-x and add them into this models folder
